@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div id="header" class="home">
+        <div class="container">
+            <nav>
+                <p class="logo">Onkar Upase </p>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About me</a></li>
+                    <li><a href="skill">Skills</a></li>
+                    <li><a href="resume">Resume</a></li>
+                    <li><a href="Projects">Projects</a></li>
+                    <li><a href="contact">Contact us</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Onkar</span> <br> From Maharashtra</h1>
+            </div>
+        </div>
+   
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="white-silhouette-key-made-zeros-600nw-2144986467.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo fuga repellat aliquam, minus cum maiores ullam amet facilis, doloribus temporibus libero velit sint numquam totam est dicta natus eos sit.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active_tab"id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><BR>Designing Web/app interfaces</BR></li>
+                            <li><span>Web Development</span><BR> Web app Development</BR></li>
+                            <li><span>App Development</span><BR>Building Andriod/ios apps</BR></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022 - 2026</span><BR>Btech(Artificial intelligence and data science)</BR></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="Experience">
+                        <ul>
+                            <li><span>Internships</span><br>AI&ML <br>Web Development <br>Java Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div id="skill">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis aspernatur quod cupiditate, ut officia nihil architecto beatae unde. Eius soluta temporibus at asperiores eaque suscipit aut obcaecati autem earum!</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>UI/Ux Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis aspernatur quod cupiditate, ut officia nihil architecto beatae unde. Eius soluta temporibus at asperiores eaque suscipit aut obcaecati autem earum!</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Java Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis aspernatur quod cupiditate, ut officia nihil architecto beatae unde. Eius soluta temporibus at asperiores eaque suscipit aut obcaecati autem earum!</p>
+                <a href="#">learn more</a>
+        </div>
+            </div>
+        </div>
+     </div>
+     
+     <div id="portfolio">
+        <div class="container">
+            <h1>
+                My Projects
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="project-portfolio-for-begginers-3.png">
+                    <div class="layer">
+                    <h3>Portfolio Website Design</h3>
+                    <p>
+                        Personal Portfolio
+                    </p>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="Face_detection_projects.png">
+                    <div class="layer">
+                        <h3>AI&ML Project</h3>
+                        <p>
+                            Face Recognisation
+                        </p>
+                       </div>
+                </div>
+                <div class="work">
+                    <img src="ecommerce-web-page-concept-illustration_114360-8204.avif">
+                     <div class="layer">
+                        <h3>E-commerce Application</h3>
+                        <p>
+                            Online Shoping Platform
+                        </p>
+                     </div>
+                   
+                   </div>
+                </div>
+            </div>
+     </div>
+     
+     <div class="container">
+        <h1 class="resume">Resume:</h1>
+        <a href="resume.png" download class="btn">Download</a>
+     </div>
+     
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>onkarupase12@gmail.com</p>
+                    <p>0123456789</p>
+                    <div class="social-icons">
+                          <a href="#">Linked-in</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text"placeholder="Your Name"required>
+                        <input type="email" placeholder="Your Email"required>
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Onkar.</p>
+        </div>
+     </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active_tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+        
+    </script>
+</body>
+</html>
